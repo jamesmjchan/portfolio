@@ -1,0 +1,50 @@
+// TABLE OF CONTENT
+// 1.0 Container 
+// 2.0 Font
+// 3.o Link
+// 4.0 Spacing
+// 5.0 button
+
+/*=============================================================================
+Container Variable
+=============================================================================*/
+
+// give fix margin right and bottom
+$box-margin-right:20px;
+$box-margin-bottom:20px;
+
+//give fix padding left and top
+$box-padding-left: 20px;
+$box-padding-top: 20px;
+
+//give box background-color 
+$box-background-color: #ced0d3;
+
+//give box shadw color
+$box-shadow: 1px 2px 3px #333435;
+
+//box 
+$box-space: 20px;
+
+
+/*=============================================================================
+fonts Variable
+=============================================================================*/
+
+// 1. title font family
+// 2. title color 
+$h-family: 'Raleway', Arial, sans-serif; //1
+$h-color: #6f6d6d; //2
+
+// 1. p font font-family
+// 2. p font color 
+$p-family: 'Raleway', Arial, sans-serif; //1
+$p-color: #777; //2
+
+
+// 1. link font color 
+// 2. when hover, change the font color
+$a-color: #777;
+$a-hover-color: #e8545c; //2
+
+

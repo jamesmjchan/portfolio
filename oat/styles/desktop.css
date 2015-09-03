@@ -1,0 +1,586 @@
+/**
+ * CONTENTS
+ *  
+ * MEDIA QUERIES - DESKTOP
+ * SETTING
+ * Global....................Globally-available variables and config.
+ *                          $COLORS
+ *                           Blue = #2A388F
+ *                           Orange = #F58245
+ *  
+ * COMPONENTS
+ * Page-head.................The main page header.
+ * Page-navigation...........The main and sub page navigation.
+ * Page-schedule.............Schedule page.
+ * Page-students.............Students page.
+ * Page-benefits.............Benefits page.
+ * Page-certification........Certification page.
+ * Page-course...............Courses page.
+ * Page-contact..............Contact page.
+ * Page-footer...............The main page footer.
+ */
+
+
+
+/*==============================================================================
+GLOBAL - MEDIA QUERIES - DESKETOP
+==============================================================================*/
+
+@media only screen and (min-width: 769px) {
+
+/*------------------------------------------------------------------------------
+    $Global
+------------------------------------------------------------------------------*/
+    
+    /* base font-size is 12px */
+    html {
+        font-size: 75%;   
+    }
+
+    
+    body.index {
+        background-image: url('../images/home-bg4.jpg');
+        background-repeat: no-repeat;
+        background-position-x: 15px;
+        background-position-y: 75px;
+        background-size: 80%;
+    }
+
+
+    p,
+    main ul li {
+        line-height: 1.8;
+    }
+
+
+    h2 {
+        margin-top: 30px;
+    }
+
+
+    main a:hover {
+        color: #f58345 !important;
+    }
+
+
+
+
+
+/*==============================================================================
+COMPONENT
+==============================================================================*/   
+
+/*------------------------------------------------------------------------------
+    Header Styles
+------------------------------------------------------------------------------*/
+    
+    .subbody header {
+        float: left;
+        width: 13%;
+        margin: 2px 0 5px 0;
+    }
+
+
+    .inner-header {
+        padding: 0;
+    }
+
+
+    .logo {
+        width: 100%;
+    }
+
+    .logo img {
+        display: block;
+    }
+
+
+
+
+
+/*------------------------------------------------------------------------------
+    Navigation Styles
+------------------------------------------------------------------------------*/
+   
+   .subpage-nav-container {
+        margin-bottom: 35px;
+    }
+
+    .home-main-nav,
+    .no-js .home-main-nav {
+        margin-top: 0;
+    }
+
+    /**
+     * show the sub nav on homepage, main nav and sub nav on subpages 
+     * in desktop environment
+     */
+    .home-sub-nav,
+    .subpage-main-nav,
+    .subpage-sub-nav {
+        display: block;
+    }
+
+
+    /**
+     * Hide the no-js fallback navs in desktop environment.
+     *
+     * Homepage logo not showing on desktop.
+     *
+     * While the overlay is opened, hide it when the window is resized
+     * to desktop environment.
+     */
+    .no-js .mobile-nav,
+    .mobile-button,
+    .index .logo,
+    .js .overlay.open {
+        display: none;
+    }
+
+
+    /**
+     * hide the 'benefits' nav link on homepage and 'home' nav link 
+     * on subpages in desktop environment 
+     */
+    .home-main-nav li:nth-child(5),
+    .subpage-main-nav li:first-child {
+        display: none;
+    }
+    
+    /**
+     * Important! it hides partial areas of the a elements inside, 
+     * which is styled to the shape of full circle.
+     */
+    .home-main-nav ul,
+    .subpage-main-nav ul {
+        overflow: hidden;    
+        height: 0;
+        padding-bottom: 7.5%;
+    }
+
+    .home-main-nav ul {
+        float: right;
+        clear: both;
+        width: 65%;
+        padding-right: 0.85%;
+        padding-left: 0.76%;
+        border-top: 5px solid #31409b;
+    }
+
+
+    .subpage-main-nav ul {
+        float: left;
+        width: 75%;
+        padding-right: 0.9%;
+        padding-left: 0.85%;
+    }
+
+
+    /**
+     * Stying 'a' to look like a half circle.
+     *
+     * Adjust the the amount of circular area that will show, larger the number, 
+     * less area show.
+     *
+     * The top and bottom padding sets the verticle position of the text.
+     * It has to total up be the same as the width property.
+     */
+    .home-main-nav a,
+    .subpage-main-nav a {
+        width: 20%;
+        margin-top: -11%;   
+        margin-right: 0;
+        margin-left: 0;
+        padding: 13.5% 0 5.5% 0;   
+        letter-spacing: 0;
+        font-size: 1.1rem;
+    }
+
+    .home-main-nav a {
+        margin-bottom: 0;
+        line-height: 0;
+    }
+
+
+    .subpage-main-nav a {
+        display: block;
+        float: left;
+        height: 0;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        border-radius: 50%;
+        background: #f58345;
+        /*Gradient*/
+        background-color: #ffaf46;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#ffaf46), to(#f58345));
+        background-image: -webkit-linear-gradient(top, #ffaf46, #f58345);
+        background-image:    -moz-linear-gradient(top, #ffaf46, #f58345);
+        background-image:     -ms-linear-gradient(top, #ffaf46, #f58345);
+        background-image:      -o-linear-gradient(top, #ffaf46, #f58345);
+        background-image:         linear-gradient(to bottom, #ffaf46, #f58345);
+        line-height: 0;
+
+        filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ffaf46, endColorstr=#F58345);
+    }
+
+
+    .home-main-nav li:last-child a,
+    .subpage-main-nav li:last-child a {
+        margin-right: 0;
+    }
+
+    .home-sub-nav {
+        float: right;
+        width: 35%;
+        margin: 6px 0 6px 0;
+    }
+
+    .home-sub-nav li {
+        float: left;
+        width: 25%;
+    }
+
+    .home-sub-nav a,
+    .subpage-sub-nav a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        color: black;
+        border-right: 1px solid black;
+        font-size: 1rem;
+    }
+
+    .home-sub-nav a:hover,
+    .subpage-sub-nav a:hover {
+        text-decoration: underline;
+    }
+
+    .home-sub-nav li:last-child a,
+    .subpage-sub-nav li:last-child a {
+        border-right: none;
+    }
+
+    .subpage-nav-container {
+        float: right;
+        width: 85%;
+        border-top: 5px solid #31409b;
+    }
+
+    .subpage-sub-nav ul {
+        float: left;
+        width: 25%;
+        margin-top: 8px;
+    }
+
+    .subpage-sub-nav li {
+        float: left;
+        width: 33.3333%;
+    }
+
+
+
+
+
+/*------------------------------------------------------------------------------
+    Navigation Hover Effects
+------------------------------------------------------------------------------*/
+
+    .home-main-nav a,
+    .subpage-main-nav a {
+        transition: all 0.2s ease-out;
+    }
+
+
+    /* hover effect to show some css transition effects, apply to every nav a */
+    .home-main-nav a:hover,
+    .subpage-main-nav a:hover {
+        transform: scale(1.12);
+        background-color: #ffc579;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc579), to(#fb9d23));
+        background-image: -webkit-linear-gradient(top, #ffc579, #fb9d23);
+        background-image:    -moz-linear-gradient(top, #ffc579, #fb9d23);
+        background-image:     -ms-linear-gradient(top, #ffc579, #fb9d23);
+        background-image:      -o-linear-gradient(top, #ffc579, #fb9d23);
+        background-image:         linear-gradient(to bottom, #ffc579, #fb9d23);
+        box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+        font-weight: 700;
+        line-height: 50%;filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ffc579, endColorstr=#fb9d23);
+    }
+
+
+    .nav-here.nav-here {
+        transform: scale(1.12);
+        background-color: #ffc579;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc579), to(#fb9d23));
+        background-image: -webkit-linear-gradient(top, #ffc579, #fb9d23);
+        background-image:    -moz-linear-gradient(top, #ffc579, #fb9d23);
+        background-image:     -ms-linear-gradient(top, #ffc579, #fb9d23);
+        background-image:      -o-linear-gradient(top, #ffc579, #fb9d23);
+        background-image:         linear-gradient(to bottom, #ffc579, #fb9d23);
+        box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+        font-weight: 700;
+        line-height: 50%;filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ffc579, endColorstr=#fb9d23);
+    }
+
+
+
+
+
+/*------------------------------------------------------------------------------
+    Schedule page
+------------------------------------------------------------------------------*/
+    
+    .mobile-schedule {
+        display: none;
+    }
+
+    .desktop-schedule {
+        display: table;
+        width: 100%;
+    }
+
+    .month-control {
+        margin-bottom: 25px;
+    }
+
+    .month-control h2 {
+        margin-top: 5px;
+        border: none;
+    }
+
+    .month-control h2 > span:first-of-type {
+        letter-spacing: 1.5px;
+    }
+
+    .desktop-schedule thead tr:first-child {
+        border-right: 1px solid #2a388f;
+        border-left: 1px solid #2a388f;
+        background-color: #7f87bb;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#7f87bb), to(#2a388f));
+        background-image: -webkit-linear-gradient(top, #7f87bb, #2a388f);
+        background-image:    -moz-linear-gradient(top, #7f87bb, #2a388f);
+        background-image:     -ms-linear-gradient(top, #7f87bb, #2a388f);
+        background-image:      -o-linear-gradient(top, #7f87bb, #2a388f);
+        background-image:         linear-gradient(to bottom, #7f87bb, #2a388f);
+        line-height: 2;filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#a7cfdf, endColorstr=#23538a);
+    }
+
+    .desktop-schedule tr th {
+        padding-bottom: 2px;
+        letter-spacing: 1px;
+        color: white;
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+
+    .desktop-schedule tbody tr:first-child td {
+        border-top: none;
+    }
+
+    .desktop-schedule tr {
+        width: 100%;
+    }
+
+    .desktop-schedule tr td {
+        position: relative;
+        width: 20%;
+        height: 160px;
+        padding-right: 1%;
+        padding-left: 1%;
+        border: solid #d2d2d2 1px;
+    }
+
+    .desktop-schedule span {
+        display: block;
+    }
+
+
+    .date {
+        position: absolute;
+        right: 5%;
+        bottom: 0;
+        color: #2a388f;
+        font-size: 3.5rem;
+    }
+
+
+    .room {
+        margin-top: 3px;
+        margin-bottom: 5px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+
+    .instructor {
+        margin-bottom: 5px;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+
+    .course {
+        display: block;
+        letter-spacing: 0.5px;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+
+    .desktop-schedule th:first-child,
+    .desktop-schedule tr td:first-child {
+        display: none;
+    }
+
+    .desktop-schedule th:last-child,
+    .desktop-schedule tr td:last-child {
+        display: none;
+    }
+
+
+
+
+
+/*------------------------------------------------------------------------------
+    Student page
+------------------------------------------------------------------------------*/
+    
+    .students .segment {
+        display: inline;
+    }
+
+
+
+/*------------------------------------------------------------------------------
+    Benefits
+------------------------------------------------------------------------------*/
+    .benefits .subpage-sub-nav ul li:nth-child(3) a {
+        text-decoration: underline;
+    }
+
+
+
+
+
+/*------------------------------------------------------------------------------
+    Certification page
+------------------------------------------------------------------------------*/
+
+    .certification article img {
+        display: block;
+        float: right;
+    }
+
+
+
+
+
+/*------------------------------------------------------------------------------
+    Course page
+------------------------------------------------------------------------------*/
+
+    .courses .subpage-sub-nav ul li:nth-child(2) a {
+        text-decoration: underline;
+    }
+
+
+
+
+
+/*------------------------------------------------------------------------------
+    Contact page
+------------------------------------------------------------------------------*/
+    
+    .faculty {
+        margin-bottom: 50px;
+    }
+}
+
+
+
+
+
+/*------------------------------------------------------------------------------
+MEDIA QUERIES - 900PX 
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 900px) {
+    .home-main-nav a,
+    .subpage-main-nav a {
+        letter-spacing: 0.5px;
+        font-size: 1.2rem;
+    }
+
+    .home-sub-nav a,
+    .subpage-sub-nav a {
+        font-size: 1.1rem;
+    }
+
+    main {
+        width: 100%;
+        max-width: 860px;
+        margin: 0 auto;
+    }
+
+    .schedule main {
+        max-width: 1200px;
+        padding-right: 0;
+    }
+    body.index {
+        background-position-x: -167px;
+        background-position-y: 115px;
+        background-size: 110%;
+    }
+}
+
+
+
+
+
+
+/*------------------------------------------------------------------------------
+MEDIA QUERIES - 1120PX
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 1120px) {
+    
+    .content-wrapper {
+        max-width: 1350px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    main {
+        padding-right: 6%;
+    }
+    .home-main-nav a,
+    .subpage-main-nav a {
+        letter-spacing: 1.5px;
+        font-size: 1.4rem;
+    }
+    .home-sub-nav a,
+    .subpage-sub-nav a {
+        font-size: 1.2rem;
+    }
+    .room {
+        margin-top: 5px;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    .instructor {
+        margin-bottom: 8px;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    .course {
+        display: block;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+    .date {
+        font-size: 4rem;
+    }
+}

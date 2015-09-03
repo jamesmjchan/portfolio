@@ -1,0 +1,547 @@
+// TABLE OF CONTENT
+// 
+// 1.0 Variable
+// 2.0 Reset
+// 3.0 Global Setting
+// 4.0 Header
+//     4.01 Mobile menu button
+//     4.02 navigation mobile version
+//     4.03 social media
+//     4.04 About me
+// 5.0 Desktop Navigation
+// 6.0 Main
+//     6.01 section project Gallery
+// 7.0 Footer
+// 8.0 No JavaScript
+
+@import '_variable';
+@import '_reset';
+
+/*=============================================================================
+Global Setting 
+=============================================================================*/
+
+.outter-wrapper {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-size: cover;
+    @media screen and (min-width: 600px) {
+        padding: 0;
+    }
+}
+
+//targeting at header
+.outter-wrapper--header {
+    @media screen and (min-width: 600px) {
+        background-image: url('../images/van_bw.jpg');
+    }
+    @media screen and (min-width: 1200px) {
+        height: 800px;
+    }
+    @media screen and (min-width: 1500px) {
+        position: relative;
+        height: 1250px;
+        .logo {
+            padding-top: 6%;
+        }
+    }
+}
+
+.header,
+.project-gallery,
+.footer {
+    @media screen and (min-width: 600px) {
+        width: 95%;
+        margin: 0 auto;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+}
+
+.title {
+    height: 50px;
+    padding-top: $box-padding-top;
+    text-align: center;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+/*=============================================================================
+Header 
+=============================================================================*/
+
+/*----------------------------------------------------------------------------
+Menu button - mobile version
+-----------------------------------------------------------------------------*/
+
+// Mobile Button Wrapper
+.wrapper-menu-btn {
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+    @media screen and (min-width: 600px) {
+        display: none;
+    }
+}
+
+// when there is no js
+.no-js .wrapper-menu-btn {
+    display: none;
+}
+
+// style hamburger menu
+.mobile-menu-btn-position {
+    position: relative;
+    width: 80%;
+}
+
+.ham-menu-position {
+    position: absolute;
+    top: 18%;
+    right: 10%;
+}
+
+.mobile-menu-btn {
+    width: 100%;
+    height: 80px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #333;
+    border: none;
+    background: none;
+    box-shadow: none;
+    font-size: 2.5rem;
+    font-weight: 700;
+    .menu__item {
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin: 0 0 5px;
+        -webkit-transition-duration: 0.2s;
+           -moz-transition-duration: 0.2s;
+             -o-transition-duration: 0.2s;
+                transition-duration: 0.2s;
+        -webkit-transition-property: all;
+           -moz-transition-property: all;
+             -o-transition-property: all;
+                transition-property: all;
+        background-color: #e8545c;
+    }
+}
+
+.mobile-menu-btn.open {
+    .menu__item:first-child {
+        -webkit-transform: rotate(45deg);
+           -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+        -webkit-transform-origin: 4px 50%;
+           -moz-transform-origin: 4px 50%;
+            -ms-transform-origin: 4px 50%;
+                transform-origin: 4px 50%;
+    }
+    .menu__item:nth-child(2) {
+        opacity: 0;
+    }
+    .menu__item:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+           -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        -webkit-transform-origin: 4px 50%;
+           -moz-transform-origin: 4px 50%;
+            -ms-transform-origin: 4px 50%;
+                transform-origin: 4px 50%;
+    }
+}
+
+/*----------------------------------------------------------------------------
+Menu slide down - mobile version
+-----------------------------------------------------------------------------*/
+
+.mobile-primary-menu {
+    // hidden the menu so when click on menu button it will show up
+    display: none;
+    border-bottom: 1px solid #888;
+    .menu__item {
+        height: 50px;
+        margin-bottom: 1px;
+        text-align: center;
+        background-color: #e4e1e1;
+    }
+    .menu__link {
+        width: 100%;
+        text-transform: uppercase;
+        font-size: 2.2rem;
+        line-height: 50px;
+        // change font color when hover
+        &:hover {
+            color: $a-hover-color;
+        }
+    }
+}
+
+/*----------------------------------------------------------------------------
+About me 
+-----------------------------------------------------------------------------*/
+
+.aboutme {
+    margin: 0 auto;
+    margin-top: 10%;
+    @media screen and (min-width: 600px) {
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.4);
+        &:hover {
+            background-color: #e8545c;
+        }
+        .aboutme__title {
+            text-align: center;
+            color: #e3e3e3;
+        }
+        .aboutme__content {
+            color: #fff;
+            line-height: 2;
+            @media screen and (min-width: 880px) {
+                width: 800px;
+                margin: 0 auto;
+            }
+        }
+    }
+    @media screen and (min-width: 1500px) {
+        margin-top: 15%;
+    }
+}
+
+/*----------------------------------------------------------------------------
+Social Media - mobile version
+-----------------------------------------------------------------------------*/
+
+.outter-wrapper--social {
+    position: relative;
+    padding: 0;
+}
+
+.social {
+    padding-top: $box-padding-top;
+    .social__item {
+        float: left;
+        width: 20%;
+        margin-bottom: $box-margin-bottom;
+        .social__link {
+            display: block;
+            text-align: center;
+            font-size: 1.4rem;
+            // .social__link
+            @media screen and (min-width: 600px) {
+                .fa {
+                    color: rgba(0, 0, 0, 0.4);
+                    font-size: 5.4rem;
+                    &:hover {
+                        color: $a-hover-color;
+                    }
+                }
+            }
+        }
+        // Social__item GITHUB icon 
+        @media screen and (min-width: 600px) {
+            &:nth-child(1) {
+                .fa {
+                    font-size: 7.2rem;
+                    line-height: 50px;
+                }
+            }
+
+            // .social__item of last item margin-right 0
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    // .social position relative to outter-wrapper--social
+    @media screen and (min-width: 800px) {
+        position: absolute;
+        top: -150px;
+        right: 1%;
+        margin: 0 auto;
+        .social__item {
+            width: auto;
+            margin-right: 50px;
+        }
+    }
+    // .socail media query
+    @media screen and (min-width: 1500px) {
+        margin-bottom: 15%;
+    }
+}
+
+/*=============================================================================
+Desktop Navigation
+=============================================================================*/
+
+.desktop-primary-menu {
+    display: none;
+    // .desktop-primary-menu media query
+    @media  screen and (min-width: 600px) {
+        display: block;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        .menu__list {
+            margin: 0 auto;
+            margin-bottom: $box-margin-bottom;
+            // .menu__list media query
+            @media screen and (min-width: 1200px) {
+                width: 1200px;
+            }
+            .menu__item {
+                display: block;
+                float: left;
+                width: 33%;
+                height: 50px;
+                text-align: center;
+                .menu__link {
+                    padding-top: $box-padding-top;
+                    text-transform: uppercase;
+                    font-size: 2.2rem;
+                    line-height: 50px;
+                    &:hover {
+                        color: #e8545c;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 1500px) {
+        position: absolute;
+        top: 0;
+        //position relative to outter-wrapper--header
+        display: block;
+    }
+}
+
+.outter-wrapper--nav {
+    @media screen and (min-width: 1500px) {
+        .menu__list {
+            .menu__item {
+                height: 80px;
+                .menu__link {
+                    color: #fff;
+                    line-height: 80px;
+                }
+            }
+        }
+    }
+}
+
+/*=============================================================================
+Main
+=============================================================================*/
+
+/*----------------------------------------------------------------------------
+project Gallery - mobile version
+-----------------------------------------------------------------------------*/
+
+.outter-wrapper--main {
+    @media screen and (min-width: 600px) {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+}
+
+.project-gallery {
+    .container {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: $box-margin-bottom;
+        background-color: #fff;
+        box-shadow: $box-shadow;
+        @media screen and (min-width: 1200px) {
+            float: left;
+            width: 47.5%;
+            height: 720px;
+            margin: 0 auto;
+            margin-right: 20px;
+            margin-bottom: $box-margin-bottom;
+            &:first-child {
+                width: 96.6%;
+                height: auto;
+                margin-right: 0;
+            }
+            &:nth-of-type(3) {
+                margin-right: 0;
+            }
+            &:nth-of-type(5) {
+                margin-right: 0;
+            }
+        }
+        .container__title {
+            padding: $box-space;
+            text-align: center;
+            color: #fff;
+            background-color: #333;
+        }
+        .container__img {
+            display: block;
+            width: 60%;
+            margin: 0 auto;
+            opacity: 0.7;
+            &:hover {
+                opacity: 1;
+            }
+        }
+        .container__body {
+            padding: $box-space;
+        }
+        .description {
+            width: 95%;
+            margin: 0 auto;
+            margin-bottom: 40px;
+            text-align: center;
+            line-height: 1.8;
+            @media screen and (min-width: 600px) {
+                width: 90%;
+            }
+        }
+        .container__link {
+            position: absolute;
+            bottom: 0;
+            display: block;
+            width: 100%;
+            height: 50px;
+            transition: all 0.3s ease-in-out;
+            text-align: center;
+            color: #fff;
+            background-color: #e8545c;
+            font-size: 2rem;
+            line-height: 50px;
+            &:hover {
+                text-decoration: underline;
+                font-size: 2.2rem;
+            }
+        }
+    }
+}
+
+/*=============================================================================
+Footer
+=============================================================================*/
+
+.outter-wrapper--footer {
+    @media screen and (min-width: 600px) {
+        position: relative;
+        height: 100%;
+        background-image: url('../images/van_skyline.jpg');
+
+                filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+           -moz-filter: grayscale(100%);
+    }
+}
+
+.contact {
+    width: 100%;
+    margin: 0 auto;
+    .title--contact {
+        text-align: center;
+        @media screen and (min-width: 600px) {
+            color: #fff;
+            font-size: 4rem;
+        }
+    }
+    .contact__content {
+        text-align: center;
+        font-size: 2rem;
+        @media screen and (min-width: 600px) {
+            color: #555;
+            font-size: 3rem;
+        }
+    }
+}
+
+.copyright {
+    text-align: center;
+}
+
+.icon-top {
+    display: none;
+    @media screen and (min-width: 600px) {
+        display: block;
+    }
+    .fa {
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        color: rgba(0,0,0,0.2);
+        &:hover {
+            color: #e8545c;
+        }
+    }
+}
+
+/*=============================================================================
+no js
+=============================================================================*/
+
+// when there is no js
+.no-js .wrapper-menu-btn {
+    display: none;
+}
+
+.no-js .desktop-primary-menu {
+    display: block;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    .menu__list {
+        margin: 0 auto;
+        margin-bottom: $box-margin-bottom;
+        .menu__item {
+            display: block;
+            float: left;
+            width: 33%;
+            height: 50px;
+            text-align: center;
+            .menu__link {
+                padding-top: $box-padding-top;
+                text-transform: uppercase;
+                font-size: 2.2rem;
+                line-height: 50px;
+                &:hover {
+                    color: #e8545c;
+                }
+            }
+        }
+    }
+}
+
+.blink1{
+    animation:blink 2s ease-in-out 0.3s infinite;
+    -webkit-animation:blink 2s ease-in-out 0.3s infinite;
+    text-shadow:0px 0px 40px rgba(234,255,47,1);
+    font-size: 4rem;
+}
+
+@keyframes blink{  
+    19.999%,22%,62.999%,64%,64.999%,70%,100%{
+    opacity:0.1
+    }
+    
+    0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100%{
+    opacity:1
+    
+    }
+}
+
+@-webkit-keyframes blink{
+    19.999%,22%,62.999%,64%,64.999%,70%,100%{
+    opacity:0.3
+    }
+    
+    0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100%{
+    opacity:0.8
+    
+    }
+}

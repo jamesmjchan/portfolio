@@ -1,0 +1,253 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* general styles */
+body{
+	background-image:url(../images/background_image.jpg);
+	background-attachment:fixed;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	
+}
+
+/*end of general styles*/
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*header styles*/
+header{
+	width:960px;
+	margin:0 auto;
+	padding:20px;
+	position:relative;
+}
+
+header h1{
+	text-align:center;
+	
+}
+
+header .instruction{
+	position:absolute;
+	top:350px;
+	left:150px;
+}
+
+header .instruction p{
+	width:800px;
+	margin:0 auto;
+	padding:10px;
+	
+}
+
+.output_tries p,
+.output_match p{
+		text-align:center;
+		margin-bottom:15px;
+		
+}
+
+.output_tries,
+.play_reset,
+.output_match{
+	position:absolute;
+	top:150px;
+	padding:10px;
+
+}
+
+.output_tries{
+	left:30px;
+	
+}
+
+.output_match{
+	right:30px;
+	
+}
+
+.game_selection{
+	left:400px;
+	
+}
+
+.play_reset{
+	left:400px;
+	top:200px;
+	
+}
+
+.btn_play{
+	margin-right:10px;	
+}
+/*end of header styles*/
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*main styles*/
+
+/*end of main styles*/
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*normal game styles*/
+.no_game{
+	display:none;
+	
+}
+
+.normal{
+	width:900px;
+	margin:0 auto;
+	margin-top:110px;
+		
+}
+
+.normal .col{
+	background-image:url(../images/card_background_1.png);
+
+}
+
+.normal .col:hover{
+	background-image:url(../images/card_background_2.png);
+}
+
+.normal .row{
+	float:left;
+	
+}
+
+.normal .row_01 .col_01,
+.normal .row_01 .col_02,
+.normal .row_01 .col_03,
+.normal .row_01 .col_04,
+.normal .row_01 .col_05,
+.normal .row_01 .col_06{
+	width:100px;
+	height:100px;
+	
+}
+
+.normal .row_02 .col_01,
+.normal .row_02 .col_02,
+.normal .row_02 .col_03,
+.normal .row_02 .col_04,
+.normal .row_02 .col_05,
+.normal .row_02 .col_06{
+	width:100px;
+	height:100px;
+	
+}
+
+.normal .row_03 .col_01,
+.normal .row_03 .col_02,
+.normal .row_03 .col_03,
+.normal .row_03 .col_04,
+.normal .row_03 .col_05,
+.normal .row_03 .col_06{
+	width:100px;
+	height:100px;
+}
+
+.normal .row_04 .col_01,
+.normal .row_04 .col_02,
+.normal .row_04 .col_03,
+.normal .row_04 .col_04,
+.normal .row_04 .col_05,
+.normal .row_04 .col_06{
+	width:100px;
+	height:100px;
+	
+}
+
+
+.normal .row_05 .col_01,
+.normal .row_05 .col_02,
+.normal .row_05 .col_03,
+.normal .row_05 .col_04,
+.normal .row_05 .col_05,
+.normal .row_05 .col_06{
+	width:100px;
+	height:100px;
+	
+}
+
+
+.normal .row_06 .col_01,
+.normal .row_06 .col_02,
+.normal .row_06 .col_03,
+.normal .row_06 .col_04,
+.normal .row_06 .col_05,
+.normal .row_06 .col_06{
+	width:100px;
+	height:100px;
+	
+}
+
+.normal .row_07 .col_01,
+.normal .row_07 .col_02,
+.normal .row_07 .col_03,
+.normal .row_07 .col_04,
+.normal .row_07 .col_05,
+.normal .row_07 .col_06{
+	width:100px;
+	height:100px;
+	
+}
+
+.normal .row_08 .col_01,
+.normal .row_08 .col_02,
+.normal .row_08 .col_03,
+.normal .row_08 .col_04,
+.normal .row_08 .col_05,
+.normal .row_08 .col_06{
+	width:100px;
+	height:100px;
+	
+}
+
+.normal .row_09 .col_01,
+.normal .row_09 .col_02,
+.normal .row_09 .col_03,
+.normal .row_09 .col_04,
+.normal .row_09 .col_05,
+.normal .row_09 .col_06{
+	width:100px;
+	height:100px;
+	
+}
+/*end of normal game styles*/
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*footer styles*/
+
+footer{
+	width:960px;
+	position:absolute;
+	bottom:0px;
+	left:170px;
+	display:none;		
+}
+
+footer p{
+	margin-left:50px;
+	margin-bottom:5px;
+	float:left;
+		
+}
+.clear{
+	clear:both;
+}
+footer h3{
+	margin-bottom:10px;
+}
+
+footer ul li a{
+	display:inline-block;
+	width:150px;
+	float:left;
+	margin-bottom:5px;
+	
+}
+
+/*end of footer styles*/
+
+
+
+
+
+

@@ -1,0 +1,105 @@
+@charset 'UTF-8';
+/* CSS Document */
+@font-face {
+    font-family: 'clear_sansregular';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/clearsans-regular-webfont.eot');
+    src: url('../fonts/clearsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/clearsans-regular-webfont.woff2') format('woff2'),
+    url('../fonts/clearsans-regular-webfont.woff') format('woff'),
+    url('../fonts/clearsans-regular-webfont.ttf') format('truetype'),
+    url('../fonts/clearsans-regular-webfont.svg#clear_sansregular') format('svg');
+}
+@font-face {
+    font-family: 'ankeregular';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/anke-webfont.eot');
+    src: url('../fonts/anke-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/anke-webfont.woff2') format('woff2'),
+    url('../fonts/anke-webfont.woff') format('woff'),
+    url('../fonts/anke-webfont.ttf') format('truetype'),
+    url('../fonts/anke-webfont.svg#ankeregular') format('svg');
+}
+/*header typography styles*/
+/*end of typography styles*/
+/*main typography styles*/
+main .subtitle h1 {
+    word-spacing: 30px;
+    color: white;
+    font-family: 'Monoton', cursive;
+    font-size: 3em;
+}
+main .subtitle h2 {
+    color: white;
+    font-family: 'Monoton', cursive;
+    font-size: 2em;
+}
+main .subtitle h2 {
+    word-spacing: 15px;
+}
+main .enter h1 {
+    color: white;
+    font-family: 'Monoton', cursive;
+    font-size: 3.5em;
+}
+.enter1 h1 {
+    color: white;
+    font-family: 'Monoton', cursive;
+    font-size: 3.5em;
+}
+main .enter h1 a {
+    text-decoration: none;
+    color: white;
+}
+main ul li a {
+    color: white;
+    font-family: 'Monoton', cursive;
+    font-size: 30px;
+}
+#section-1,
+#section-2,
+#section-3,
+#section-4 {
+    color: white;
+    font-family: 'clear_sansregular';
+}
+#section-1 h2,
+#section-2 h2,
+#section-3 h2,
+#section-4 h2 {
+    font-family: 'ankeregular';
+    font-size: 36px;
+    font-weight: bold;
+}
+#section-1 h3,
+#section-2 h3,
+#section-3 h3,
+#section-4 h3 {
+    font-size: 30px;
+}
+.tutorial p {
+    font-size: 19px;
+    line-height: 25px;
+}
+.code-editor h4 {
+    font-size: 22px;
+    font-weight: bold;
+}
+footer p {
+    color: white;
+    font-family: 'ankeregular';
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+/*end of typography styles*/

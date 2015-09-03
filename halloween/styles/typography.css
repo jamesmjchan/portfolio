@@ -1,0 +1,97 @@
+@charset'utf-8';
+/*CSS Document*/
+
+/*fonts styles*/
+@font-face {
+    font-family: 'kaushan_scriptregular';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/kaushanscript-regular-webfont.eot');
+    src: url('../fonts/kaushanscript-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/kaushanscript-regular-webfont.woff2') format('woff2'),
+    url('../fonts/kaushanscript-regular-webfont.woff') format('woff'),
+    url('../fonts/kaushanscript-regular-webfont.ttf') format('truetype'),
+    url('../fonts/kaushanscript-regular-webfont.svg#kaushan_scriptregular') format('svg');
+}
+
+@font-face {
+    font-family: 'double_featureregular';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/doublefeature20-webfont.eot');
+    src: url('../fonts/doublefeature20-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/doublefeature20-webfont.woff2') format('woff2'),
+    url('../fonts/doublefeature20-webfont.woff') format('woff'),
+    url('../fonts/doublefeature20-webfont.ttf') format('truetype'),
+    url('../fonts/doublefeature20-webfont.svg#double_featureregular') format('svg');
+}
+
+
+/*end of fonts styles*/
+
+
+
+
+
+/*typography styles*/
+
+header h1 {
+    background: -webkit-linear-gradient(#830002, #f8060a);
+    -webkit-background-clip: text;
+    font-family: 'double_featureregular';
+    font-size: 80px;
+    line-height: 100px;
+
+    -webkit-text-fill-color: transparent;
+}
+
+h1,
+h2,
+p {
+    color: white;
+}
+
+header .instruction p {
+    letter-spacing: 7px;
+    color: rgba(210,5,5,0.80);
+    text-shadow: rgba(165,0,2,0.60) -6px 6px 0;
+    font-family: 'double_featureregular';
+    font-size: 60px;
+    line-height: 90px;
+}
+
+header .output_tries p,
+header .output_match p {
+    font-family: 'Frijole', cursive;
+    font-size: 24px;
+}
+
+header h2 {
+    font-family: 'Frijole', cursive;
+    font-size: 24px;
+}
+
+button {
+    color: red;
+}
+
+footer p {
+    font-family: 'Frijole', cursive;
+    font-size: 16px;
+}
+
+footer h3 {
+    color: white;
+    font-family: 'Frijole', cursive;
+    font-size: 16px;
+}
+
+footer ul li a {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif;
+    font-size: 14px;
+}
+
+/* end of typography styles*/

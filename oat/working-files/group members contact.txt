@@ -1,0 +1,50 @@
+<<<<<<< Updated upstream
+Alvin
+
+Cell-phone: 604-779-6408
+
+email: alvinchen1988@icloud.com
+
+
+<<<<<<< HEAD
+Karina
+
+Cell-phone: 604 723 1621
+
+email: ksopilnyak@gmail.com
+=======
+James 
+
+CP: 778-869-3199	
+
+email: james.mj.chan@gmail.com
+>>>>>>> origin/master
+
+
+Jean 
+
+cell-phone: 778-385-5137
+email: jeand02@yahoo.ca
+
+=======
+Alvin
+
+Cell-phone: 604-779-6408
+
+email: alvinchen1988@icloud.com
+
+
+<<<<<<< HEAD
+Karina
+
+Cell-phone: 604 723 1621
+
+email: ksopilnyak@gmail.com
+=======
+James 
+
+CP: 778-869-3199	
+
+email: james.mj.chan@gmail.com
+>>>>>>> origin/master
+>>>>>>> Stashed changes

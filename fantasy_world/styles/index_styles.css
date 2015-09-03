@@ -1,0 +1,284 @@
+@charset "UTF-8";
+/* CSS Document */
+/*header styles*/
+header{
+	width:1200px;
+	margin:0 auto;	
+	
+}
+/*end of header styles */
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*main styles*/
+main {
+	width:1200px;
+	margin:0 auto;
+	margin-top:50px;
+}
+.subtitle{
+	text-align:center;
+	
+}
+.subtitle h1{
+	margin-bottom:20px
+}
+.enter{
+	margin-top:50px;
+	text-align:center;
+	cursor:pointer;
+	border:rgba(193,193,193,1.00) solid 2px;
+	width: 250px;
+	height:100px;
+	line-height:100px;
+	margin:0 auto;
+	margin-top:50px;
+	transition: border 0.2s linear;
+	-webkit-transition:border 0.2s linear;
+	   -moz-transition:border 0.2s linear;
+}
+.enter:hover{
+	background-color:rgba(189,189,189,0.3);
+	border:5px solid rgba(193,193,193,1.00);
+}
+.space{
+	width:1000px;
+	height:340px;
+	margin:0 auto;
+}
+.rocket{
+	width:300px;
+	height:300px;
+	background-repeat:no-repeat;
+	background-position:center;
+	transform:rotate(40deg);
+	-webkit-transform:rotate(40deg);
+	   -moz-transform:rotate(40deg);
+	    -ms-transform:rotate(40deg);
+	z-index:-2;
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*main  menu styles*/
+#nav{
+	width:1200px;
+	margin:0 auto;
+}
+.subMenu{
+	background-color:black;	
+	height:50px;
+	z-index:999;
+}
+.subNavBtn{
+	z-index:999;	
+}
+main ul li{
+	display:block;	
+	float:left;	
+	width:20%;
+	height:20%;
+	text-align:center;
+}
+main ul li a{
+ 	line-height:50px;
+	text-decoration:none;
+	display:block;	
+}
+main ul li a:hover{
+	color:rgba(234,255,47,0.93);	
+	text-shadow: 0px 0px 50px rgba(234,255,47,0.93);
+}
+main .tutorial{
+	width:960px;
+	margin:0 auto;	
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*general section styles*/
+.section_1_content,
+.section_2_content,
+.section_3_content,
+.section_4_content{
+	width:800px;
+	margin:0 auto;
+		
+}
+#section-1 h2, 
+#section-2 h2,
+#section-3 h2,
+#section-4 h2{
+	margin-top:30px;
+	background-color:rgba(253,216,84,0.8);
+	display:block;
+	height:50px;
+	line-height:50px;
+	padding-left:10px;
+	border-radius: 2px;
+}
+#section-1 h3, 
+#section-2 h3,
+#section-3 h3,
+#section-4 h3{
+	border-bottom:solid 3px; white;	
+	margin-top:30px;
+}
+.tutorial p{
+	margin:0 auto;
+	padding:20px;
+}
+/*end of general section styles*/
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*section-1 styles*/
+#section-1{
+	width:960px;
+	margin:0 auto;	
+	display:block;
+	padding:30px;
+	margin-top:50px;
+}
+/*end of section-1 styles*/
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*section-2 styles*/
+.enter1{
+	margin-top:50px;
+	text-align:center;
+	cursor:pointer;
+	border:rgba(193,193,193,1.00) solid 2px;
+	width: 250px;
+	height:100px;
+	line-height:100px;
+	margin:0 auto;
+	margin-top:50px;
+	transition: border 0.2s linear;
+	-webkit-transition:border 0.2s linear;
+}
+.enter1:hover{
+	background-color:rgba(189,189,189,0.3);
+	border:5px solid rgba(193,193,193,1.00);
+}
+/*end of section-2 styles*/
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*section-3 styles*/
+#typer{
+	width:800px;
+	margin:0 auto;
+	font-size:30px;
+	color:white;
+    font-family: 'ankeregular';
+	font-weight:bold;
+	margin-top:20px;
+	
+}
+/*end of section-3 styles*/
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*contact stlyes*/
+#section-4 form{
+	width:800px;
+	margin:0 auto;
+	font-size:22px;
+}
+#section-4 fieldset{
+	border:white 1.5px solid;
+	padding:30px;
+	margin:0 auto;
+	
+}
+#section-4 legend{
+	font-size:22px;
+	padding:15px;
+}
+#section-4 form label{
+	width:500px;
+	margin:20px 0 20px 0;
+	display:block;
+
+}
+#field-1,
+#field-2{
+	width:300px;
+	height:30px;
+	margin:20px 0 20px 0;
+	font-size:16px;
+}
+#section-4 form textarea{
+	width:400px;
+	height:200px;
+	margin:20px 0 20px 0;
+	font-size:16px;
+}
+#submit_btn{
+	width:100px;
+	height:50px;
+	font-size:18px;
+	margin:0 auto;
+	border-radius:3px;
+	border:white 2px solid; 
+	margin-top:20px;
+}
+#submit_btn:hover{
+	opacity:0.8;
+}
+/*end of contact styles*/
+/*end of main styles*/
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*footer styles*/
+
+footer{
+	width:500px;
+	margin:20px auto 20px auto;
+}
+/*end of footer styles*/ 
+/*meida styles*/
+@media only screen and (max-width: 1200px){
+	.wrapper{
+		min-width:96%;	
+	}
+}
+@media only screen and (max-width: 960px){
+	.wrapper{
+		min-width:80%;	
+		font-size:14px;
+	}
+}
+@media only screen and (max-width: 760px){
+	.wrapper{
+		width:60%;	
+		font-size:8px;
+	}
+	.wrapper .neolight{
+		width:40%;
+		margin:0 auto;
+	}
+	main .enter{
+		width:15%;
+	}
+}
+@media only screen and (max-width: 320px){
+	.wrapper{
+		min-width:5%;	
+	}
+}
+/*end of media styles*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

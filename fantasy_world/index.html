@@ -1,0 +1,389 @@
+<!doctype html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width" initial-scale="1" />
+            <title>JavaScript & jQuery Tutorial</title>
+            <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <![endif]-->
+            <link rel="stylesheet" href="styles/reset_styles.css">
+            <link rel="stylesheet" href="styles/typography_styles.css">
+            <link rel="stylesheet" href="styles/index_styles.css">
+            <link rel="stylesheet" href="styles/neolight_styles.css">
+            <link rel="stylesheet" href="styles/rocket_animation_styles.css">
+            <link rel="stylesheet" href="styles/code_editor_styles.css">
+
+            <link href='http://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
+        </head>
+
+        <body>
+        <div class="wrapper">
+            <header id="home">
+                <div class="neolight a1">
+                  <span class="blink1">J</span>
+                  <span class="off">a</span>
+                  <span class="off">v</span>
+                  <span class="off">a</span>
+                  <span class="blink">S</span>
+                  <span class="off">c</span>
+                  <span class="off">r</span>
+                  <span class="off">i</span>
+                  <span class="off">p</span>
+                  <span class="off">t</span>
+                  <span class="off">+</span>
+                  <span class="blink">j</span>
+                  <span class="blink1">Q</span>
+                  <span class="off">u</span>
+                  <span class="off">e</span>
+                  <span class="off">r</span>
+                  <span class="off">y</span>
+                </div><!--end of div Neo light heading-->
+            </header><!--end of header-->
+
+
+            <!---------------------------------------end of header-------------------------->
+            <main>
+
+            <div class="subtitle">
+                <h1>Welcome to</h1>
+                <h1>JavaScript jQuery</h1>
+                <h1>fantasy world</h1>
+            </div><!--end of subtitle-->
+
+            <div class="enter">
+                <h1><a>ENTER</a></h1>
+            </div><!--end of enter div-->
+
+            <div class="space">
+                <div class="fly">
+                    <div class="rocket fire" id="disply-image-only">
+                    </div><!--end of rocket-->
+                </div><!--end of fly-->
+            </div><!--end of space-->
+
+            <div class="subMenu">
+                <ul id="nav">
+                  <li><a href="#home" class="subNavBtn" id="reset">Home</a></li>
+                  <li><a href="#section-1" class="subNavBtn">Tutorial 1</a></li>
+                  <li><a href="#section-2" class="subNavBtn">Tutorial 2</a></li>
+                  <li><a href="#section-3" class="subNavBtn">Tutorial 3</a></li>
+                  <li><a href="#section-4" class="subNavBtn">Contact</a></li>
+                </ul>
+            </div><!--end of subMenu-->
+
+            <div class="tutorial">
+            <!----------------------------------Section 1-------------------------------------------------->
+            <div id="section-1" class="s1">
+                <h2>Tutorial One - Sticky Menu</h2>
+
+                <div class="show">
+                </div><!--end of show-->
+                    <div class="section_1_content inner">
+                        <h3>Step One</h3>
+                        <p>First of all, you need to attach the newest version of jQuery which can be found at Google jQuery. Either one of the verision can work
+                        <a href="https://developers.google.com/speed/libraries/devguide#jquery" target="_blank">1.11.1/2.1.1 </a> or go to jQuery.com to download the latest version
+                        <a href="http://jquery.com/download/" target="_blank">1.11.1/2.1.1</a> you can simply post the link on your html or download the jQuery in your root folder.
+                        <br> Making sure you add " http: " into the link in order to make it function if you are using google.
+                        And then, you can Download sticky menu plugin from 
+                        <a href="http://stickyjs.com/" target="_blank">stickyjs.com.</a> After downloading the file, you can put jquery.sticky.js under jQuery in HTML. The following HTML code will demonstrate how it will look like.</p>
+                    <!----------------------------------coding area-------------------------------------------------->
+<div class="code-editor"> 
+    <h4>HTML</h4>
+    <code class="language-css" >
+
+    +++++++++++++++++ end of footer +++++++++++++++++++
+
+    < script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">< /script>
+
+    < script src="scripts/jquery.sticky.js">< /script>
+
+    < /body>
+
+    < /html>
+
+    </code>
+</div><!--end of code-editor-->
+                    <!-------------------------------End coding area-------------------------------------------------->
+                    <h3>Step Two</h3>
+                    <p>After completing step one, now you can create your navigation bar. This is how it looks like in HTML. You can change class or id as your own. You do not have to follow my HTML.</p>
+                    <!----------------------------------coding area-------------------------------------------------->
+<div class="code-editor"> 
+    <h4>HTML</h4>
+    <code class="language-css" >
+        < div class="subMenu" >
+            < ul id="nav" >
+                < li>< a href="#home" class="subNavBtn">Home< /a>< /li>
+                < li>< a href="#section-1" class="subNavBtn">Tutorial 1< /a>< /li>
+                < li>< a href="#section-2" class="subNavBtn">Tutorial 2< /a>< /li>
+                < li>< a href="#section-3" class="subNavBtn">Tutorial 3< /a>< /li>
+                < li>< a href="#section-4" class="subNavBtn">Contact< /a>< /li>   
+            < /ul >
+        < /div ><!--end of subMenu-->
+    </code>
+</div><!--end of code-editor-->
+                    <!-------------------------------End coding area-------------------------------------------------->
+                    <h3>Step Three</h3>
+                    <p>Now you can style the navigation to be the way you want to look like. In this case, I will just code as my website navigation bar as an example.</p>
+                    <!----------------------------------coding area-------------------------------------------------->
+<div class="code-editor"> 
+    <h4>CSS</h4>
+    <code class="language-css" >
+
+    #nav{
+    width:1200px;
+    margin:0 auto;
+    }
+
+    .subMenu{
+    background-color:black; 
+    height:50px;
+    }
+
+    main ul li{
+    display:block;  
+    float:left; 
+    width:20%;
+    height:20%;
+    text-align:center;
+    }
+
+    main ul li a{
+    line-height:50px;
+    text-decoration:none;
+    display:block;  
+    }
+
+    main ul li a:hover{
+    color:rgba(234,255,47,0.93);    
+    text-shadow: 0px 0px 50px rgba(234,255,47,0.93);
+    }
+
+    </code>
+</div><!--end of code-editor-->
+                    <!-------------------------------End coding area-------------------------------------------------->
+                    <h3>Step Four</h3>
+                    <p>Now just call the function with following script and You are good to go !!! </p>
+                    <!----------------------------------coding area-------------------------------------------------->
+<div class="code-editor"> 
+    <h4>JavaScript</h4>
+    <code class="language-css" >
+
+    $(document).ready(function(){
+    $(".subMenu").sticky({topSpacing:0});
+    });
+
+    </code>
+</div><!--end of code-editor-->
+                    <!-------------------------------End coding area-------------------------------------------------->
+
+                </div><!--end of section_1_content-->
+            </div><!--end of section-1-->
+            <!----------------------------------end Section 1-------------------------------------------------->
+            <!---------------------------------- Section 2-------------------------------------------------->
+            <div id="section-2">
+                <br><br>
+                <h2>Tutorial Two - Click Event To hide the button</h2>
+
+                <div class="show">
+                <div class="enter1">
+                <h1><a>ENTER</a></h1>
+
+                </div><!--end of enter div-->
+
+                </div><!--end of show-->
+                <div class="section_2_content">
+                <h3>Step One</h3>
+                <p>First of all, you need to attach the newest version of jQuery which can be found at Google jQuery.Either one of the verision can work<a href="https://developers.google.com/speed/libraries/devguide#jquery" target="_blank">1.11.1/2.1.1 </a> or jQuery.com<a href="http://jquery.com/download/" target="_blank">1.11.1/2.1.1</a></p>
+                <p> If you are using Google jQuery, you can simply post the link on your html.<br>
+                Go to <a href="http://www.google.com/fonts" target="_blank">google fonts</a> to download " Monoton " fonts. Then, creating a div classed name as "enter". The following is the HMTL demonstration</p>
+                <!----------------------------------coding area-------------------------------------------------->
+<div class="code-editor"> 
+    <h4>HTML</h4>
+    <code class="language-css" >
+
+    < link href='http://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
+    < /head>
+    < body>
+    < div class="enter">
+    < h1><a>ENTER</a>< /h1>
+    < /div>< !--end of enter div-->
+
+    < script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" > < /script >
+    < /body >
+    < /html >
+
+    </code>
+</div><!--end of code-editor-->
+                <!--------------------------------end coding area-------------------------------------------------->
+                <h3>Step Two</h3>
+                <p>styling the button with some hover effect to make the button look more real.  
+
+                <!----------------------------------coding area-------------------------------------------------->
+<div class="code-editor"> 
+    <h4>CSS</h4>
+    <code class="language-css" >
+
+    .enter1{
+    margin-top:50px;
+    text-align:center;
+    cursor:pointer;
+    border:rgba(193,193,193,1.00) solid 2px;
+    width: 250px;
+    height:100px;
+    line-height:100px;
+    margin:0 auto;
+    margin-top:50px;
+    transition: border 0.2s linear;
+    -webkit-transition:border 0.2s linear;
+    }
+
+    .enter1:hover{
+    background-color:rgba(189,189,189,0.3);
+    border:5px solid rgba(193,193,193,1.00);
+    }
+
+    .enter1 h1{
+    color:white;
+    font-size:3.5em;
+    font-family:"Monoton", cursive;
+
+    }
+    </code>
+</div><!--end of code-editor-->
+                <!--------------------------------end coding area-------------------------------------------------->
+                <h3>Step Three</h3>
+                <p>use the following script will make the button disappear</p>
+                <!----------------------------------coding area-------------------------------------------------->
+<div class="code-editor"> 
+    <h4>JavaScript</h4>
+    <code class="language-css" >
+
+    $('.enter1').click(function(e) {
+      $('.enter1').hide();  
+    });
+
+    //Extra information 
+    //click on Menu the button will reveal
+
+    $('.subNavBtn').click(function(e) {
+      $('.enter1').show();  
+    });
+
+    </code>
+</div><!--end of code-editor-->
+                <!--------------------------------end coding area-------------------------------------------------->
+                </div><!--end of section_2_content-->
+            </div><!--end of section-2-->
+            <!----------------------------------end Section 2-------------------------------------------------->
+            <!---------------------------------- Section 3-------------------------------------------------->
+            <div id="section-3" class="section s3">
+                <br><br>
+                <h2>Tutorial Three - Typer</h2>
+
+                <div id="typer" class="show">
+                </div><!--end of show-->
+
+                <div class="section_3_content">
+                    <h3>Step One</h3>
+                    <p>First of all, you need to attach the newest version of jQuery which can be found at Google jQuery. Either one of the verision can work
+                    <a href="https://developers.google.com/speed/libraries/devguide#jquery" target="_blank">1.11.1/2.1.1 </a> or go to jQuery.com to download the latest version
+                    <a href="http://jquery.com/download/" target="_blank">1.11.1/2.1.1</a> you can simply post the link on your html or download the jQuery in your root folder.
+                    <br> Making sure you add " http: " into the link in order to make it function if you are using google.
+                    now you create a div id the name as " typer ". The following HTML code will demonstrate how it will look like.</p>
+                    <!----------------------------------coding area-------------------------------------------------->
+<div class="code-editor"> 
+    <h4>HTML</h4>
+    <code class="language-css" >
+
+
+    < div id="typer" class="show">
+    < /div>< !--end of show-->
+
+    < script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" > < /script >
+    < script src="scripts/jquery.typer.js">< /script>
+    < /body >
+    < /html >
+
+    </code>
+</div><!--end of code-editor-->
+                        <!--------------------------------end coding area-------------------------------------------------->
+                        <h3>Step Two</h3>
+                        <p>Give the div some styles.</p>
+                        <!----------------------------------coding area-------------------------------------------------->
+<div class="code-editor"> 
+    <h4>CSS</h4>
+    <code class="language-css" >
+
+    #typer{
+    width:800px;
+    margin:0 auto;
+    font-size:30px;
+    color:white;
+    font-family: 'ankeregular';
+    font-weight:bold;
+    margin-top:20px;
+
+    }
+
+    </code>
+</div><!--end of code-editor-->
+                    <!--------------------------------end coding area-------------------------------------------------->
+                    <h3>Step Three</h3>
+                    <p>With the following script you are able to use the typer plugin. </p>
+
+                    <!----------------------------------coding area-------------------------------------------------->
+<div class="code-editor"> 
+    <h4>JavaScript</h4>
+    <code class="language-css" >
+
+    $('#typer').typeTo("This is my last JavaScript tutorial. <br>
+    I hope the tutorials are easy to read and understand. Thank you for viewing.");
+
+    </code>
+</div><!--end of JavaScript-->
+                    <!--------------------------------end coding area-------------------------------------------------->
+                </div><!--end of section_3_content-->
+            </div><!--end of section-3-->
+            <!----------------------------------end Section 3-------------------------------------------------->
+            <div id="section-4" class="s4">
+            <br><br>
+            <h2>Contact</h2>
+            <div class="section_4_content">
+            <h3>Contact Me</h3>
+            <p>Name: James Chan</p>
+            <p>Email: james.mj.chan@gmail.com</p>
+
+
+            <form action='index.html' method='get'>
+            <fieldset>
+            <legend>Comments</legend>
+              <label for="field-1">Full Name:</label>
+              <input id="field-1" name="field-1" type="text" placeholder=" Enter your name ex. James Chan" required>
+              <label for="field-1">Email:</label>
+              <input id="field-2" name="field-2" type="email" placeholder=" your-email@something.com" required>
+              <label for="survey">Please leave a comment:</label>
+              <textarea id="comment" name="comments" wrap="soft" placeholder="Please leave your comments here..."></textarea>
+            </fieldset>
+              <input src="#" id="submit_btn" type="submit" value="Submit">
+
+            </form>
+            </div><!--end of secttion 4 content-->
+
+            <!----------------------------------end Section 4-------------------------------------------------->
+            </div><!--end of tutorial-->
+            </main><!--end of main-->
+            <!----------------------------------------end of main----------------------------->
+            <footer>
+            <p>&copy; 2014 James Chan For Educational Purposes only</p>
+            </footer><!--end of footer-->
+        </div><!--end of wrapper-->
+        <!----------------------------------------end of footer--------------------------->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="scripts/jquery.sticky.js"></script>
+        <script src="scripts/code_editor.js"></script>
+        <script src="scripts/jquery.typer.js"></script>
+        <script src="scripts/general.js"></script>
+
+        </body>
+    </html>

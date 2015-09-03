@@ -1,0 +1,62 @@
+/**
+ * CONTENTS
+ *
+ * MEDIA QUERIES
+ * Navigation...............................Reponsive to screen size. 
+ */
+
+
+/*==============================================================================
+    MEDIA QUERIES NAVIGATION
+==============================================================================*/
+
+@media only screen and (min-width: 468px) {
+
+    .home-main-nav a{
+        width: 23%;
+        margin-left: 5.1666%;
+        margin-right: 5.1666%;
+        padding: 11.5% 0;
+        margin-bottom: 15px;
+    }
+
+    .js .overlay .subpage-mobile-nav ul {
+        height: 200px;
+        width: 60%;
+        margin-top: -100px;
+        margin-left: -30%;
+    }
+
+    .js .overlay .subpage-mobile-nav li a{
+        width: 47.5%;
+        float: left;
+        margin-right: 5%;
+    }
+
+    .js .overlay .subpage-mobile-nav li:nth-child(even) a{
+        margin-right: 0;
+    }
+
+    .js .overlay .subpage-mobile-nav li:nth-child(7) a{
+        border-bottom: none;
+    }
+
+}
+
+
+@media only screen and (min-width: 568px) {
+
+    .no-js .home-main-nav{
+        margin-top: 10px;
+    }
+
+    .home-main-nav a{
+        width: 20%;
+        margin-left: 6.6666%;
+        margin-right: 6.6666%;
+        padding: 10% 0;
+    }
+
+}
+
+

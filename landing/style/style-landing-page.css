@@ -1,0 +1,342 @@
+@charset 'utf-8';
+/* CSS Document */
+/*======================================================
+Table Content 
+========================================================
+1.0 - Reset
+2.0 - Typography
+    2.1 - Default typography
+3.0 - Mobile
+    3.1 - Global
+    3.2 - Header
+    3.3 - main section
+    3.4 - animation
+4.0 - Tablet 
+    4.1 main section 
+        4.1.1 width 
+5.0 - Desktop
+
+
+---------------------------------------------------------*/
+/*======================================================
+    Reset 
+========================================================*/
+/* 
+http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+main,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+main,
+section {
+    display: block;
+}
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+/*======================================================
+    Typography  
+========================================================*/
+/*------------------------------------------------------
+        Default Typography
+--------------------------------------------------------*/
+html {
+    font-size: 62.5%;
+}  /*base font-size is 10px*/
+body, a {
+    color: white;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+} /*3 font-weights: 400,600,700*/
+h1 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 4.2rem;
+    font-weight: 600;
+}
+h2 {
+    color: white;
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+h3 {
+    margin-bottom: 100px;
+    padding: 5px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+a {
+    text-decoration: none;
+    font-size: 1.9rem;
+}
+.fa:hover{
+    color:#d6d2dd;
+}
+/*======================================================
+    Mobile  
+========================================================*/
+/*------------------------------------------------------
+        Global
+--------------------------------------------------------*/
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    background-image: url(../image/coffee_shop_freelance.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+/*------------------------------------------------------
+            Clearfix
+--------------------------------------------------------*/
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.wrapper {
+    padding: 10px;
+    height:1300px;
+    background-color: rgba(177,177,177,0.30);
+}
+.container,
+.portfolio__item img,
+.portfolio__item a {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+/*------------------------------------------------------
+        Header
+--------------------------------------------------------*/
+.slogan {
+    padding-left: 10%;
+}
+/*------------------------------------------------------
+        main section
+--------------------------------------------------------*/
+.portfolio {
+    overflow: hidden;
+    height: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    border: solid 2px white;
+    box-shadow: 2px 3px 2px #333;
+
+    -webkit-transition: all 1.5s, ease-out;
+       -moz-transition: all 1.5s, ease-out;
+            transition: all 1.5s, ease-out;
+}
+.portfolio h3 {
+    line-height: 100px;
+}
+.container,
+.portfolio{
+    margin-bottom: 15px;
+}
+.portfolio__item a {
+    text-decoration: underline;
+    line-height: 50px;
+}
+.mobile-btn {
+    height:auto;
+
+    -webkit-transition: all 1.5s, ease-out;
+       -moz-transition: all 1.5s, ease-out;
+            transition: all 1.5s, ease-out;
+}
+/*------------------------------------------------------
+        Footer
+--------------------------------------------------------*/
+.social-media-link {
+    text-align: center;
+    display:inline-block;
+    margin-right:20px;
+}
+
+/*======================================================
+    Tablet  
+========================================================*/
+
+@media only screen and (min-width: 600px) {
+
+/*------------------------------------------------------
+        main section article
+--------------------------------------------------------*/
+    .portfolio ul{
+        width: 75%;
+        margin: 0 auto;
+    }
+    
+/*------------------------------------------------------         
+    some animation effect when hover the links
+--------------------------------------------------------*/
+    .portfolio:hover {
+        height: auto;
+    }
+    .portfolio:hover h3 {
+        line-height: 1.5;
+    }
+    .portfolio__item a:hover,
+    .portfolio__item a:focus {
+        text-decoration: underline;
+        color: #e6eb31;
+    }
+}
+/*======================================================
+    Desktop
+========================================================*/
+@media only screen and (min-width: 800px) {
+/*------------------------------------------------------
+        main section article
+--------------------------------------------------------*/
+    .portfolio:first-child .portfolio__item {
+        width: 25%;
+        float:left;
+        font-size: 2.2rem;
+    }
+    .portfolio:nth-of-type(2) .portfolio__item {
+        width:50%;
+        float:left;
+    }
+    .portfolio {
+        width: 800px;
+    }
+
+}

@@ -1,0 +1,228 @@
+@charset 'utf-8';
+
+// CONTENTS
+//
+// RESETS 
+// CSS...............................reset. 
+// Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+// http://cssreset.com
+
+// TABLE OF CONTENTS
+// 
+// 1.0 RESET 
+// 2.0 Global Setting
+//     2.01 typography
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+}
+
+//HTML5 display-role reset for older browsers
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+main,
+section {
+    display: block;
+}
+
+
+html {
+    height: 100%;
+}
+
+
+body {
+    height: 100%;
+    line-height: 1;
+}
+
+
+ol,
+ul {
+    list-style: none;
+}
+
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+/*=============================================================================
+Global Setting
+=============================================================================*/
+
+
+//base font-size is 10px 
+html {
+    font-size: 62.5%;
+}  
+
+//3 font-weights: 400,600,700
+body {
+    color: #111;
+    background-color: white;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+}   
+
+h1 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: $box-margin-bottom;
+}
+
+h2 {
+    color: $h-color;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: $box-margin-bottom;
+}
+
+h3 {
+    color: $h-color;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: $box-margin-bottom;
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+
+

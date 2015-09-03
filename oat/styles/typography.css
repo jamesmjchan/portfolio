@@ -1,0 +1,141 @@
+/**
+ * CONTENTS
+ * 
+ * BASE
+ * Typograohy.....................defualt base for typography
+ *
+ */
+
+/*==============================================================================
+    BASE TYPOGRAPHY
+==============================================================================*/
+
+/*base font-size is 10px*/
+html {
+    font-size: 62.5%;
+} 
+
+/*3 font-weights: 400,600,700*/
+body {
+    color: #111;
+    background-color: white;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+}  
+
+h1 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #555;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+h2 {
+    color: #2a388f;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/icomoon.eot?knrynj');
+    src: url('../fonts/icomoon.eot?#iefixknrynj') format('embedded-opentype'),
+    url('../fonts/icomoon.woff?knrynj') format('woff'),
+    url('../fonts/icomoon.ttf?knrynj') format('truetype'),
+    url('../fonts/icomoon.svg?knrynj#icomoon') format('svg');
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+    padding-right: 5px;
+    text-transform: none;
+    /*------ styling for icon fonts - -------*/
+    /*color: #2A388F;*/
+    color: #f58345;
+    font-family: 'icomoon';
+    font-size: 1.7rem;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    speak: none;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before {
+    content: '\e942';
+}
+
+.icon-envelop:before {
+    content: '\e945';
+}
+
+.icon-briefcase:before {
+    content: '\e9ae';
+    padding-right: 8px;
+    color: #f58345;
+}
+
+.icon-sphere:before {
+    content: '\e9c9';
+}
+
+.icon-link:before {
+    content: '\e9cb';
+}
+
+.icon-file-pdf:before {
+    content: '\eada';
+}
+
+/* additional styling for icon fonts----*/
+.link {
+    font-size: 1.4rem;
+}
+
+.icon-circle-right:before {
+    content: '\ea3c';
+}
+
+.icon-circle-left:before {
+    content: '\ea40';
+}
+
+.icon-circle-left {
+    padding-right: 20px;
+}
+
+.icon-circle-right {
+    padding-right: 0;
+    padding-left: 20px;
+}
+
+.icon-circle-right:before,
+.icon-circle-left:before {
+    padding: 5px;
+    border: 5px solid #f58345;
+    border-radius: 50%;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.icon-circle-right:hover:before,
+.icon-circle-left:hover:before {
+    color: white;
+    background-color: #f58345;
+}
